@@ -9,6 +9,7 @@ import {
 } from "@nextui-org/react";
 import * as actions from "@/actions";
 import { useFormState } from "react-dom";
+import FormButton from "../common/form-button";
 
 const TopicCreateForm = () => {
   const [formState, action] = useFormState(actions.createTopic, { errors: {} });
@@ -45,7 +46,7 @@ const TopicCreateForm = () => {
               </div>
             )}
 
-            <Button type="submit">Submit</Button>
+            <FormButton>Submit</FormButton>
           </div>
         </form>
       </PopoverContent>
